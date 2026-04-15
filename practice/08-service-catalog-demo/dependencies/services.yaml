@@ -1,0 +1,7 @@
+dependencies:
+  upstream:
+    - name: customer-service
+      reason: enrich order summaries with customer information
+    - name: inventory-service
+      reason: attach fulfillment and stock state
+  downstream: []

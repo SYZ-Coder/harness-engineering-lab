@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Demo Order Service API
+  version: 1.0.0
+paths:
+  /orders/{orderId}:
+    get:
+      summary: Get order by id
+      parameters:
+        - in: path
+          name: orderId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Order found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderResponse"
+components:
+  schemas:
+    OrderResponse:
+      type: object
+      required:
+        - id
+        - status
+      properties:
+        id:
+          type: string
+        status:
+          type: string

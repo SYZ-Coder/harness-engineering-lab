@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: order-query-service
+  title: Order Query Service
+  description: Query-facing service for reading order summaries and status.
+  tags:
+    - spring-boot
+    - orders
+    - read-api
+  links:
+    - title: Service Overview
+      url: ./docs/service-overview.md
+spec:
+  type: service
+  lifecycle: production
+  owner: team-order-platform
+  system: commerce-platform
+  providesApis:
+    - order-query-api
+  dependsOn:
+    - component:default/customer-service
+    - component:default/inventory-service

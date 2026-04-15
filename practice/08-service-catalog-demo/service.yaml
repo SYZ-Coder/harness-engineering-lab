@@ -1,0 +1,23 @@
+service:
+  name: order-query-service
+  title: Order Query Service
+  description: Query-facing service for reading order summaries and status.
+  lifecycle: production
+  system: commerce-platform
+  owner:
+    team: team-order-platform
+    contact: order-platform@example.com
+  runtime:
+    language: java
+    framework: spring-boot
+  apis:
+    - id: order-query-api
+      path: apis/openapi-order-query.yaml
+  dependencies:
+    upstream:
+      - customer-service
+      - inventory-service
+    downstream: []
+  docs:
+    overview: docs/service-overview.md
+    ownership: ownership/owner.md

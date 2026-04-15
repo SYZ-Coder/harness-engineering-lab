@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Java / Maven
+target/
+*.class
+
+# OS
+Thumbs.db
+Desktop.ini

@@ -4,8 +4,8 @@ Practical Harness Engineering guides, templates, playbooks, and runnable demos.
 
 This repository is organized around two main tracks:
 
-- 通用智能体工程化
-- 微服务智能体工程化
+- General Agent Engineering
+- Microservice Agent Engineering
 
 It is designed as a standalone open-source project for people who want to move from:
 
@@ -15,16 +15,16 @@ to:
 
 - "I can actually apply it in a real codebase"
 
-## 仓库内容
+## What is inside
 
 - `works/`
-  指南、模板、手册、清单
+  Guides, templates, playbooks, and checklists
 - `practice/`
-  可运行示例
+  Runnable demos
 - `INDEX.md`
-  推荐阅读路径
+  Recommended reading path
 
-## 仓库结构
+## Repository structure
 
 ```text
 harness-engineering-practice/
@@ -53,7 +53,7 @@ harness-engineering-practice/
     └── 09-validation-review-demo/
 ```
 
-目录说明：
+中文说明：
 
 - `README.md` / `README.en.md`：中英文首页
 - `INDEX.md`：总阅读索引，适合第一次进入仓库时快速找阅读顺序
@@ -78,44 +78,44 @@ harness-engineering-practice/
 - `practice/08-service-catalog-demo/`：最小服务目录 Demo
 - `practice/09-validation-review-demo/`：最小验证闭环 Demo
 
-## 你能在这里找到什么
+## What you will find
 
-### 通用智能体工程化
+### General Agent Engineering
 
-- 概念到落地的总览文章
-- 中小团队 `AGENTS.md` 模板
-- 验证闭环设计
-- 架构模式对照
-- 团队实施路线图
-- 一页式落地清单
-- 从零到发布的实操教程
+- concept-to-practice guide
+- `AGENTS.md` template for small teams
+- validation loop design
+- architecture comparison
+- implementation roadmap
+- adoption checklist
+- from-zero-to-release tutorial
 
-### 微服务智能体工程化
+### Microservice Agent Engineering
 
-- Spring Cloud / Java 微服务落地蓝图
-- Spring 微服务 `AGENTS.md` 模板
-- 契约测试与可观测性 Playbook
-- ArchUnit + 契约检查清单
-- 微服务落地全景指南
+- Spring Cloud / Java microservices blueprint
+- Spring microservices `AGENTS.md` template
+- contract testing and observability playbook
+- ArchUnit + contract checklist
+- microservices adoption guide
 
-### 可运行示例
+### Runnable demos
 
 - `practice/02-minimal-harness-demo`
-  一个最小 Python Demo，展示任务文件 + `AGENTS.md` + 测试门控
+  A tiny Python demo showing task file + `AGENTS.md` + tests as a minimal Harness loop
 - `practice/03-spring-service-template-demo`
-  一个最小 Java 微服务模板，展示分层、ArchUnit、契约文件与 OTel 骨架
+  A minimal Java microservice-style template showing layering, ArchUnit checks, contract file placement, and OTel notes
 - `practice/05-contract-testing-demo`
-  一个最小契约测试 Demo，展示 provider verification 与 consumer 兼容性检查
+  A minimal contract-testing demo showing provider verification and consumer compatibility checks
 - `practice/06-observability-demo`
-  一个最小可观测性 Demo，展示 trace id 贯通、日志关联与跨服务链路可见性
+  A minimal observability demo showing trace-id propagation, log correlation, and cross-service flow visibility
 - `practice/07-openrewrite-demo`
-  一个最小 OpenRewrite Demo，展示批量治理、确定性重写与历史写法演进
+  A minimal OpenRewrite-style demo showing batch modernization, deterministic rewrites, and legacy-code evolution
 - `practice/08-service-catalog-demo`
-  一个最小服务目录 Demo，展示平台元数据、仓库自描述与 owner/API/依赖入口
+  A minimal service-catalog demo showing platform metadata, repository self-description, and owner/API/dependency entry points
 - `practice/09-validation-review-demo`
-  一个最小验证闭环 Demo，展示 lint、测试、AI review 与人工 review 的组合
+  A minimal validation-loop demo showing lint, tests, AI review, and human review as separate feedback layers
 
-## 推荐阅读路径
+## Recommended reading path
 
 1. `works/index.md`
 2. `works/general-agent-engineering/adoption-guides-and-roadmaps/harness-engineering-how-to-use-and-land.md`
@@ -133,7 +133,7 @@ harness-engineering-practice/
 14. `practice/08-service-catalog-demo/README.md`
 15. `practice/09-validation-review-demo/README.md`
 
-## 快速验证
+## Quick verification
 
 ### Python demos
 
@@ -154,16 +154,16 @@ cd practice\03-spring-service-template-demo
 mvn test
 ```
 
-## 项目目标
+## Project goal
 
-这个仓库不是为了把 Harness Engineering 讲成抽象理论。
+This repository is not meant to present Harness Engineering as abstract theory.
 
-它更希望帮助你：
+It is meant to help teams:
 
-- 写出更好的仓库入口文件
-- 给 coding agents 补上结构与验证
-- 在微服务体系里引入契约与可观测性
-- 形成团队可以直接复制的 Harness 模式
+- write better repository entry files
+- add structure and validation around coding agents
+- introduce contracts and observability into microservice adoption
+- build reusable Harness patterns that teams can actually copy
 
 ## License
 

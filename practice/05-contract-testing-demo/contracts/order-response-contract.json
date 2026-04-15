@@ -1,0 +1,20 @@
+{
+  "interaction": "get-order-by-id",
+  "request": {
+    "method": "GET",
+    "path": "/orders/order-1"
+  },
+  "response": {
+    "status": 200,
+    "required_body_fields": [
+      "id",
+      "status",
+      "total"
+    ],
+    "expected_body": {
+      "id": "order-1",
+      "status": "CREATED",
+      "total": 1200
+    }
+  }
+}
